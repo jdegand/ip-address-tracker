@@ -52,6 +52,7 @@ Users should be able to:
 ### Continued development
 
 - Leaflet seems to be dying at present.
+- To run, git clone and add API key where YOUR_API_KEY is
 
 ### Useful resources
 
