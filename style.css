@@ -1,0 +1,135 @@
+:root {
+--VeryDarkGray: hsl(0, 0%, 17%);
+--DarkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    font-size: 18px;
+    color: var(--VeryDarkGray);
+}
+
+input {
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+.background-section {
+    height: 50vh;
+    width: 100%; 
+    background-image: url(images/pattern-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+#input {
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 50px 0;
+    position: relative;
+}
+
+#input::placeholder {
+    color: var(--DarkGray);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    margin: 16px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.arrow-div {
+    background: black;
+    height: 57px;
+    width: 42px;
+    margin-left: -1%;
+    z-index: 5;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#grid {
+    background: #fff;
+    border-radius: 20px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, calc(80vw / 4));
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vh;
+    z-index: 1000;
+}
+
+.title {
+    color: var(--DarkGray);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.value {
+    font-weight: 700;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /*max-width: 24ch;*/
+    white-space: pre-line;
+}
+
+.border {
+    border-left: 2px solid var(--DarkGray);
+    padding-left: 50px;
+}
+
+#mapid { 
+    height: 50vh;
+    width: 100%; 
+}
+
+@media (max-width: 768px) {
+    .arrow-div {
+        margin-left: -10%;
+    }
+
+    #grid {
+        width: 100vw;
+        grid-template-columns: repeat(4, calc(100vw / 4));
+        top: 44%;
+    }
+
+    .flex-column {
+        font-size: 16px;
+    }
+
+    .border {
+        border-left: 1px solid var(--DarkGray);
+        padding-left: 4px;
+    }
+}
