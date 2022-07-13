@@ -13,7 +13,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
-
 ## Overview
 
 ### The challenge
@@ -35,7 +34,6 @@ Users should be able to:
 
 ![](./ip-tracker-screenshot-alt-mobile.png)
 
-
 ## My process
 
 ### Built with
@@ -47,7 +45,7 @@ Users should be able to:
 ### What I learned
 
 - Surprised, I didn't have CORS problems.
-- Use click() to get layout correct on load
+- Used click() to get the correct layout on load
 
 ### Continued development
 
